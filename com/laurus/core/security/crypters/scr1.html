@@ -1,0 +1,14 @@
+<?php
+	include("Cipher.php");
+?>
+
+<?php
+	include("key.php");
+?>
+<?php
+	//script to add send an encrypted link
+	
+
+	$v=Cipher::encipher($MY_KEY[1],"kunalmestri9@gmail.com");
+	echo "<a href='verify.php?prag1=". $v ."'>test</a>";
+?>
